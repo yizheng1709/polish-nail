@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Card from './Card'
+import './menu.css'
+import '../universal.css'
 
 export default class Menu extends Component {
 
@@ -63,12 +65,48 @@ export default class Menu extends Component {
              price: "28"}
         ]
 
-        let menuTwo = []
+        let menuTwo = [
+            {name: "Eye Brows",
+            price: "7"},
+            {name: "Lip",
+            price: "5"},
+            {name: "Chin",
+            price: "7"},
+            {name: "Neck",
+            price: "8"},
+            {name: "Cheek or Jaw",
+            price: "8"},
+            {name: "Forehead",
+            price: "6"},
+            {name: "Whole Face",
+            price: "30"},
+            {name: "Full Legs",
+            price: "50"},
+            {name: "Half Legs",
+            price: "28"},
+            {name: "Full Arms",
+            price: "30"},
+            {name: "Half Arms",
+            price: "20"},
+            {name: "Under Arms",
+            price: "15"},
+            {name: "Bikini",
+            price: "25"},
+            {name: "Brazilian",
+            price: "50"}
+        ]
 
         return (
-            <div>
-                {menuOne.map( obj => <Card name={obj.name} price={obj.name} /> )}
-            </div>
+            <>
+                <div className="center title">Nail Services</div>
+                <div className="menu">
+                    {menuOne.map( obj => <Card name={obj.name} price={obj.price} key={obj.name} /> )}
+                </div>
+                <div className="center title">Waxing Services</div>
+                <div className="menu">
+                    {menuTwo.map(obj => <Card name={obj.name} price={obj.price} key={obj.name} />)}
+                </div>
+            </>
         )
     }
 }

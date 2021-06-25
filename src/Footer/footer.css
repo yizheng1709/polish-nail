@@ -1,3 +1,37 @@
 .footer {
-    padding-top: 50px;
+    display: block;
+}
+
+.top {
+    padding-top: 45px;
+    background-color: rgb(245, 220, 181);
+    border-bottom: 2px solid rgb(235, 183, 99);
+}
+
+.bottom {
+    background-color: rgb(253, 238, 251);
+    padding-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    /* column-gap: 280px; */
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+
+.footer-font {
+    font-size: 40px;
+    color: rgb(200, 151, 59);
+    text-decoration: underline;
+    font-family: 'Courgette', cursive;
+}
+
+.small-footer-font {
+    font-size: 30px;
+    color: rgb(200, 151, 59);
+    font-family: 'Courgette', cursive;
 }
